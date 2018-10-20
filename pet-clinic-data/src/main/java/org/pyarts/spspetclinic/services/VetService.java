@@ -1,13 +1,8 @@
 package org.pyarts.spspetclinic.services;
 
 import org.pyarts.spspetclinic.model.Vet;
+import org.pyarts.spspetclinic.services.util.JpaRepositoryService;
 
-import java.util.Set;
+public interface VetService extends JpaRepositoryService<Vet, Long> {
 
-public interface VetService {
-    Vet findById(Long id);
-
-    Vet save(Vet vet);
-
-    Set<Vet> findAll();
 }
