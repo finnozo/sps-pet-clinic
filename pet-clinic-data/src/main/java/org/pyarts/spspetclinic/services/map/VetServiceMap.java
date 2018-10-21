@@ -1,11 +1,11 @@
 package org.pyarts.spspetclinic.services.map;
 
 import org.pyarts.spspetclinic.model.Vet;
-import org.pyarts.spspetclinic.services.util.JpaRepositoryService;
+import org.pyarts.spspetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements JpaRepositoryService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
