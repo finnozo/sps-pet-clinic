@@ -1,13 +1,13 @@
 package org.pyarts.spspetclinic.services.map;
 
 import org.pyarts.spspetclinic.model.Speciality;
-import org.pyarts.spspetclinic.services.SpecialitiesService;
+import org.pyarts.spspetclinic.services.SpecialityService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
-public class SpecialitiesMapService extends AbstractMapService<Speciality, Long> implements SpecialitiesService {
+public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements SpecialityService {
 
     @Override
     public Set<Speciality> findAll() {
