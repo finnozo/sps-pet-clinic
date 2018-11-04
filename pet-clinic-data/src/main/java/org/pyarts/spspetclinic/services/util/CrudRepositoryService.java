@@ -2,7 +2,7 @@ package org.pyarts.spspetclinic.services.util;
 
 import java.util.Set;
 
-public interface JpaRepositoryService<T, ID> {
+public interface CrudRepositoryService<T, ID> {
 
     Set<T> findAll();
 
